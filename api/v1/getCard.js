@@ -4,7 +4,7 @@ const { createCanvas, loadImage, GlobalFonts } = require('@napi-rs/canvas');
 const getRecordCard = require('../../lib/hoyo/getRecordCard');
 const gameConfig = require('../../lib/hoyo/gameConfig.json');
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   try {
     // do card
     let { game } = req.query;
